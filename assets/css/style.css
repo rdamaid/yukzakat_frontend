@@ -1,3 +1,6 @@
+body {
+  font-family: Lato;
+}
 /* Navbar */
 .navbar {
   position: relative;
@@ -51,8 +54,9 @@
 .jumbotron {
   background-image: url(/assets/img/bg.png);
   background-size: cover;
-  height: 500px;
+  height: 650px;
   position: relative;
+  margin-bottom: 0px;
 }
 
 .jumbotron::after {
@@ -76,6 +80,19 @@
   font-size: 20px;
 }
 
+.subtext {
+  padding-top: 15px;
+  font-size: 14px;
+  color: #b3b3b3;
+  font-weight: 300;
+}
+
+.subtext b {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+}
+
 .jumbotron h3 {
   width: 100%;
   text-align: center;
@@ -91,18 +108,27 @@
   padding: 0 10px;
 }
 
-.btn-google {
-  color: #545454;
-  background-color: #ffffff;
-  box-shadow: 0 1px 2px 1px #ddd;
-  font-size: 12px;
+.social-btn .btn {
+  margin: 10px 0;
+  font-size: 15px;
+  text-align: left;
+  line-height: 24px;
+}
+.social-btn .btn i {
+  float: left;
+  margin: 4px 15px 0 5px;
+  min-width: 15px;
 }
 
-.btn-facebook {
-  color: #545454;
-  background-color: #ffffff;
-  box-shadow: 0 1px 2px 1px #ddd;
+/* FOOTER */
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background-color: #44bf78;
+
   font-size: 12px;
+  color: #ffffff;
 }
 /* Desktop Version */
 @media (min-width: 992px) {
