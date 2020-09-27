@@ -1,5 +1,6 @@
 body {
   font-family: Lato;
+  background-color: #e5e5e5;
 }
 /* Navbar */
 .navbar {
@@ -33,6 +34,7 @@ body {
   text-align: left;
   width: 15%;
   margin-left: -10px;
+  /* padding: 0px; */
 }
 
 .tombol-nav:hover {
@@ -147,7 +149,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
-  background-color: #44bf78;
+  background-color: #27ae60;
   margin-top: -32px;
   font-size: 12px;
   color: #ffffff;
@@ -187,11 +189,18 @@ body {
     margin-bottom: -8px;
   }
 
+  .navbar-nav > .active {
+    border-bottom: 3px solid #27ae60;
+    width: 50% !important;
+    padding-bottom: 5px;
+  }
+
   .jumbotron {
     margin-top: -80px;
   }
 
   .tombol-nav {
+    margin-left: 10px;
     width: 100%;
   }
 }
