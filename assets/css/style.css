@@ -36,6 +36,18 @@ body {
   /* color: #ffffff; */
 }
 
+.tombol-nav:active {
+  background-color: #1f9b53 !important;
+  border: none;
+  color: #ffffff;
+}
+
+.tombol-nav:focus {
+  background-color: #1f9b53 !important;
+  border: none;
+  color: #ffffff;
+}
+
 .tombol {
   background-color: #44bf78;
   border: none;
@@ -49,6 +61,17 @@ body {
   color: #ffffff;
 }
 
+.tombol:active {
+  background-color: #1f9b53 !important;
+  border: none;
+  color: #ffffff;
+}
+
+.tombol:focus {
+  background-color: #1f9b53 !important;
+  border: none;
+  color: #ffffff;
+}
 /* END OF UTILITY */
 
 .jumbotron {
@@ -121,14 +144,16 @@ body {
 }
 
 /* FOOTER */
-.footer-copyright {
+.footer-copyright .sign {
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
   background-color: #44bf78;
-
+  margin-top: -32px;
   font-size: 12px;
   color: #ffffff;
+  position: relative;
+  z-index: 1;
 }
 /* Desktop Version */
 @media (min-width: 992px) {
