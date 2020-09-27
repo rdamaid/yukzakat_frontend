@@ -1,0 +1,132 @@
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+.navbar-brand {
+  font-family: Lato;
+  font-size: 30px;
+  color: #000000;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.bg-nav {
+  background-color: #44bf78;
+  font-weight: 400;
+}
+
+/* Utility */
+.tombol-nav {
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: none;
+  color: #44bf78;
+}
+
+.tombol-nav:hover {
+  background-color: #44bf78;
+  border: none;
+  /* color: #ffffff; */
+}
+
+.tombol {
+  background-color: #44bf78;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.tombol:hover {
+  background-color: #27ae60;
+  border: none;
+  color: #ffffff;
+}
+
+/* END OF UTILITY */
+
+.jumbotron {
+  background-image: url(/assets/img/bg.png);
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .container {
+  /* text-align: center; */
+  margin-top: 150px;
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron h2 {
+  font-size: 20px;
+}
+
+.jumbotron h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #b3b3b3;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.jumbotron h3 span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.btn-google {
+  color: #545454;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 1px #ddd;
+  font-size: 12px;
+}
+
+.btn-facebook {
+  color: #545454;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 1px #ddd;
+  font-size: 12px;
+}
+/* Desktop Version */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #27ae60;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -80px;
+  }
+}
