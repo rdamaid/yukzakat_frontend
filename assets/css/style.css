@@ -5,7 +5,9 @@ body {
 .navbar {
   position: relative;
   z-index: 1;
+  background-color: #27ae60;
 }
+
 .navbar-brand {
   font-family: Lato;
   font-size: 30px;
@@ -23,11 +25,14 @@ body {
 
 /* Utility */
 .tombol-nav {
-  text-transform: uppercase;
+  text-transform: none;
   border-radius: 10px;
   background-color: #ffffff;
   border: none;
   color: #44bf78;
+  text-align: left;
+  width: 15%;
+  margin-left: -10px;
 }
 
 .tombol-nav:hover {
@@ -94,13 +99,14 @@ body {
 
 .jumbotron .container {
   /* text-align: center; */
-  margin-top: 150px;
+  margin-top: 140px;
   position: relative;
   z-index: 1;
 }
 
 .jumbotron h2 {
   font-size: 20px;
+  font-weight: 700;
 }
 
 .subtext {
@@ -114,6 +120,11 @@ body {
   font-size: 14px;
   color: #000000;
   font-weight: 500;
+}
+
+.subtext a {
+  color: #000000;
+  font-weight: 700;
 }
 
 .jumbotron h3 {
@@ -131,20 +142,8 @@ body {
   padding: 0 10px;
 }
 
-.social-btn .btn {
-  margin: 10px 0;
-  font-size: 15px;
-  text-align: left;
-  line-height: 24px;
-}
-.social-btn .btn i {
-  float: left;
-  margin: 4px 15px 0 5px;
-  min-width: 15px;
-}
-
 /* FOOTER */
-.footer-copyright .sign {
+.footer-copyright {
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
@@ -155,8 +154,19 @@ body {
   position: relative;
   z-index: 1;
 }
+
+.footer-copyright a {
+  color: #ffffff;
+}
+
 /* Desktop Version */
 @media (min-width: 992px) {
+  .navbar {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+  }
+
   .navbar-brand,
   .nav-link {
     color: #ffffff !important;
@@ -179,5 +189,9 @@ body {
 
   .jumbotron {
     margin-top: -80px;
+  }
+
+  .tombol-nav {
+    width: 100%;
   }
 }
