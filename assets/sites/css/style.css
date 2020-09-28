@@ -1,6 +1,6 @@
 body {
   font-family: Lato;
-  background-color: #ffffff;
+  background-color: #eff0f5;
 }
 /* Navbar */
 .navbar {
@@ -256,6 +256,49 @@ a {
   padding-top: 10px;
 }
 
+.container .kalkulasi .card .card-title-2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.input-title {
+  text-align: left;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 12px;
+  padding-left: 50px;
+  opacity: 50%;
+  margin-top: -5px;
+}
+
+.social-btn .btn {
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-check {
+  text-align: left;
+  margin-top: -5px;
+  vertical-align: middle;
+}
+
+.card-pembayaran {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.card-pembayaran .form-check-label img {
+  height: 50px;
+}
+
 /* Desktop Version */
 @media (min-width: 992px) {
   .navbar {
@@ -317,5 +360,12 @@ a {
   .info-panel p {
     text-align: center;
     padding: 0 40px;
+    opacity: 60%;
+  }
+
+  .social-btn .btn {
+    font-size: 14px;
+    display: unset;
+    padding: 10px;
   }
 }
