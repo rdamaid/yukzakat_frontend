@@ -9,7 +9,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Admin Dashboard</title>
+    <title>Admin Transaksi</title>
     <link href="/assets/admin/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/admin/css/custom.css" />
     <!-- FONT LATO -->
@@ -29,6 +29,9 @@
   </head>
   <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+      <a href="#">
+        <img src="/assets/sites/img/logo.png" alt="logo" class="logo" />
+      </a>
       <a class="navbar-brand" href="/pages/sites/login.html">YukZakat</a>
       <button
         class="btn btn-link btn-sm order-1 order-lg-0"
@@ -87,21 +90,20 @@
         <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
           <div class="sb-sidenav-menu">
             <div class="nav">
-              <div class="sb-sidenav-menu-heading judul">Admin Dashboard</div>
-              <a class="nav-link active" href="/pages/admin/index.html">
+              <div class="sb-sidenav-menu-heading">Admin Dashboard</div>
+              <a class="nav-link " href="/pages/admin/index.html">
                 <div class="sb-nav-link-icon">
                   <i class="fas fa-tachometer-alt"></i>
                 </div>
                 Beranda
               </a>
-              <a class="nav-link" href="/pages/admin/transaction.html">
+              <a class="nav-link active" href="#">
                 <div class="sb-nav-link-icon">
                   <i class="fas fa-money-bill"></i>
                 </div>
                 Transaksi
               </a>
 
-              
           </div>
         </nav>
       </div>
@@ -112,61 +114,73 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            <li class="breadcrumb-item active" aria-current="page">Transaksi</li>
           </ol>
         </nav>
         <main>
           <div class="container-fluid">
-            <h1 class="mt-4">Dashboard</h1>
-            <div class="row justify-content-center py-3 pr-4">
-              <div class="col-md-3 py-5">
-                <div class="card dashboard" >
-                  <div class="card-header ">
-                    USERS
-                  </div>
-                  <div class="card-body">
-                   <div class="body-card-db">
-                     60
-                   </div>
-                  </div>
+            <div class="card mb-4">
+              <div class="card-header judul pt-4">
+                Daftar Semua Transaksi User
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered"
+                    id="dataTable"
+                    width="100%"
+                    cellspacing="0"
+                  >
+                    <thead>
+                      <tr>
+                        <th>Nama</th>
+                        <th>Detail Transaksi</th>
+                        <th>Tanggal</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th>Nama</th>
+                        <th>Detail Transaksi</th>
+                        <th>Tanggal</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td>Haji Bolot</td>
+                        <td>Rp. 2.500.000,-</td>
+                        <td>12 Desember 2012</td>
+                        <td><span class="btn btn-danger btn-block">Belum Selesai</span></td>
+                        <td>
+                          <a href=#"
+                            class="btn btn-warning btn-sm">Edit</a>
+                        <a href="#"
+                            class="btn btn-danger btn-sm">Delete</a>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Haji Kontol</td>
+                        <td>Rp. 2.500.000,-</td>
+                        <td>12 Desember 2012</td>
+                        <td><span class="btn btn-success btn-block">Selesai</span></td>
+                        <td>
+                          <a href=#"
+                            class="btn btn-warning btn-sm">Edit</a>
+                        <a href="#"
+                            class="btn btn-danger btn-sm">Delete</a>
+
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-              <div class="col-md-3 py-5">
-                <div class="card dashboard" >
-                  <div class="card-header">
-                    Transaksi
-                  </div>
-                  <div class="card-body">
-                    <div class="body-card-db">
-                      16
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 py-5">
-                <div class="card dashboard" >
-                  <div class="card-header">
-                    Belum Selesai
-                  </div>
-                  <div class="card-body">
-                    <div class="body-card-db">
-                     7
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 py-5">
-                <div class="card dashboard" >
-                  <div class="card-header">
-                    Selesai
-                  </div>
-                  <div class="card-body">
-                    <div class="body-card-db">
-                      8
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
           </div>
         </main>
         <footer class="py-4 bg-light mt-auto">
