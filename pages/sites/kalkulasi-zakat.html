@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" href="/assets/sites/css/style.css" />
     <link rel="shortcut icon" href="/assets/sites/img/logo-ipb.png" />
-    <title>Beranda</title>
+    <title>Kalkulasi Zakat</title>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -46,8 +46,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-link active" href="#">Beranda</a>
-            <a class="nav-link" href="/pages/sites/kalkulasi-zakat.html"
+            <a class="nav-link" href="/pages/sites/index.html">Beranda</a>
+            <a class="nav-link active" href="/pages/sites/kalkulasi-zakat.html"
               >Zakat</a
             >
             <a class="nav-link" href="#">Rekening</a>
@@ -68,15 +68,17 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5 pt-4">
-            <h1 class="py-2">YukZakat</h1>
+            <h1 class="py-2">Kalkulasi Zakat</h1>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <!-- <li class="breadcrumb-item bread-text"><a href="#">Home</a></li> -->
+                <li class="breadcrumb-item bread-text">
+                  <a href="/pages/sites/index.html">Beranda</a>
+                </li>
                 <li
                   class="breadcrumb-item active bread-text"
                   aria-current="page"
                 >
-                  Beranda
+                  Kalkulasi Zakat
                 </li>
               </ol>
             </nav>
@@ -86,46 +88,32 @@
     </div>
     <!-- End of Jumbotron Card -->
 
-    <!-- Konten Beranda -->
+    <!-- Konten Kalkulasi Zakat -->
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-10 info-panel">
-          <div class="row">
-            <div class="col-lg">
-              <a href="/pages/sites/kalkulasi-zakat.html">
-                <img
-                  class="mx-auto d-block"
-                  src="/assets/sites/img/info-1.png"
-                  alt="kalkulator-zakat"
-                />
-              </a>
-              <p>
-                Gunakan kalkulator zakat untuk menghitng jumlah zakat yang harus
-                anda bayarkan.
-                <br />
-                <br />
-                Pastikan harta anda sudah melebihi nishab (85 gram emas)
-              </p>
-            </div>
-            <div class="col-lg">
-              <a href="#">
-                <img
-                  class="mx-auto d-block"
-                  src="/assets/sites/img/info-2.png"
-                  alt="bayar-zakat"
-                />
-              </a>
-              <p>
-                Sudah mengetahui berapa zakat anda? <br />
-                Silakan langsung mengisikan nominalnya dan melakukan pembayaran
-                zakat di sini.
-              </p>
+        <div class="col-lg-5 kalkulasi">
+          <div class="card text-center">
+            <div class="card-body">
+              <h2 class="card-title pb-2">Kalkulasi Zakat Mal</h2>
+              <form class="pt-5">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <button type="submit" class="btn btn-block btn-primary tombol">
+                  Kalkulasi Zakat
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- END OF Konten Beranda -->
+    <!-- END OF Konten Kalkulasi Zakat -->
 
     <!-- FOOTER -->
     <footer>
