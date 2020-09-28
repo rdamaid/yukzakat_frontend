@@ -28,7 +28,7 @@
 
     <link rel="stylesheet" href="/assets/sites/css/style.css" />
     <link rel="shortcut icon" href="/assets/sites/img/logo-ipb.png" />
-    <title>Register</title>
+    <title>Beranda</title>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -51,7 +51,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-link" href="/pages/sites/index.html">Beranda</a>
+            <a class="nav-link active" href="#">Beranda</a>
             <a class="nav-link" href="#">Zakat</a>
             <a class="nav-link" href="#">Rekening</a>
             <a class="nav-link" href="/pages/sites/login.html">Masuk</a>
@@ -66,60 +66,60 @@
     </nav>
     <!-- END OF NAVBAR -->
 
-    <!-- Login Card -->
-    <div class="jumbotron jumbotron-fluid">
+    <!-- Jumbotron Card -->
+    <div class="jumbotron jumbotron-fluid jumbot">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5">
-            <div class="card text-center">
-              <div class="card-body">
-                <h2 class="card-title pb-2">DAFTAR</h2>
-                <form>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    class="btn btn-block btn-primary tombol"
-                  >
-                    Berikutnya
-                  </button>
-                </form>
-                <h3 class="pt-3">
-                  <span>ATAU</span>
-                </h3>
-                <div class="row justify-content-center social-btn">
-                  <div class="col-4">
-                    <a href="#" class="btn btn-primary"
-                      ><i class="fa fa-facebook"></i> <b> Facebook</b></a
-                    >
-                  </div>
-                  <div class="col-4">
-                    <a href="#" class="btn btn-danger"
-                      ><i class="fa fa-google"></i> <b> Google</b></a
-                    >
-                  </div>
-                </div>
-                <div class="subtext">
-                  Punya akun? <a href="/pages/sites/login.html">Login</a>
-                </div>
-              </div>
+            <h1>YukZakat</h1>
+            <p>Zakat | Mantap | Sekali</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Jumbotron Card -->
+
+    <!-- Konten Beranda -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-10 info-panel">
+          <div class="row">
+            <div class="col-lg">
+              <img
+                class="mx-auto d-block"
+                src="/assets/sites/img/info-1.png"
+                alt="kalkulator-zakat"
+              />
+              <p>
+                Gunakan kalkulator zakat untuk menghitng jumlah zakat yang harus
+                anda bayarkan.
+                <br />
+                <br />
+                Pastikan harta anda sudah melebihi nishab (85 gram emas)
+              </p>
+            </div>
+            <div class="col-lg">
+              <img
+                class="mx-auto d-block"
+                src="/assets/sites/img/info-2.png"
+                alt="bayar-zakat"
+              />
+              <p>
+                Sudah mengetahui berapa zakat anda? <br />
+                Silakan langsung mengisikan nominalnya dan melakukan pembayaran
+                zakat di sini.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End of Login Card -->
+    <!-- END OF Konten Beranda -->
 
     <!-- FOOTER -->
     <footer>
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">
+      <div class="footer-copyright footer-all text-center py-3 mt-5">
         <span> © YukZakat 2020 </span>
         <span> <a href="#">Tentang Kami</a> </span>
       </div>
@@ -127,6 +127,8 @@
       <!-- Copyright -->
     </footer>
     <!-- END OF FOOTER -->
+
+    <!-- <script src="/assets/sites/js/script.js"></script> -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

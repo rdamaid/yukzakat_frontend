@@ -10,6 +10,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Admin Transaksi</title>
+    <link rel="shortcut icon" href="/assets/sites/img/logo-ipb.png" />
     <link href="/assets/admin/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/admin/css/custom.css" />
     <!-- FONT LATO -->
@@ -79,7 +80,7 @@
             <a class="dropdown-item" href="#">Settings</a>
             <a class="dropdown-item" href="#">Activity Log</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="login.html">Logout</a>
+            <a class="dropdown-item" href="/pages/sites/login.html">Logout</a>
           </div>
         </li>
       </ul>
@@ -113,7 +114,7 @@
         <!-- BREADCRUMB -->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <!-- <li class="breadcrumb-item"><a href="#">Transaksi</a></li> -->
             <li class="breadcrumb-item active" aria-current="page">Transaksi</li>
           </ol>
         </nav>
@@ -126,12 +127,12 @@
               <div class="card-body">
                 <div class="table-responsive">
                   <table
-                    class="table table-bordered"
+                    class="table table-striped"
                     id="dataTable"
                     width="100%"
                     cellspacing="0"
                   >
-                    <thead>
+                    <thead class="thead-dark">
                       <tr>
                         <th>Nama</th>
                         <th>Detail Transaksi</th>
@@ -155,7 +156,7 @@
                         <td>Rp. 2.500.000,-</td>
                         <td>12 Desember 2012</td>
                         <td><span class="btn btn-danger btn-block">Belum Selesai</span></td>
-                        <td>
+                        <td class="center">
                           <a href=#"
                             class="btn btn-warning btn-sm">Edit</a>
                         <a href="#"
