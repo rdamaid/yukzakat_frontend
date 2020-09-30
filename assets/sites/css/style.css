@@ -221,6 +221,11 @@ body {
   font-size: 14px;
 }
 
+.info-rekening h2 {
+  padding: 0 40px;
+  text-align: center;
+}
+
 .breadcrumb {
   background-color: transparent;
   justify-content: center;
@@ -430,8 +435,40 @@ table th {
   .nav-link {
     text-transform: uppercase;
     margin-right: 20px;
-
     white-space: nowrap;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown a i {
+    padding-left: 3px;
+    font-size: 12px;
+    transition: 300ms ease all;
+  }
+
+  .dropdown a:hover i {
+    transform: rotate(-90deg);
+    transition: 300ms ease all;
+  }
+
+  /* .dropdown-menu {
+    background: transparent;
+    border: transparent;
+  }
+
+  .dropdown-menu a {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  } */
+  .dropdown-menu a:active {
+    background-color: #44bf78;
+  }
+
+  .navbarDropdownMenuLink > .active {
+    border-bottom: transparent;
+    padding-left: 1000px;
   }
 
   .nav-link:hover::after {
@@ -445,6 +482,19 @@ table th {
   }
 
   .navbar-nav > .active {
+    border-bottom: 3px solid #27ae60;
+    width: 50% !important;
+    padding-bottom: 5px;
+  }
+
+  .navbar-nav li > .active {
+    border-bottom: 3px solid #27ae60;
+    width: 75% !important;
+
+    padding-bottom: 5px;
+  }
+
+  .nav-item > .active {
     border-bottom: 3px solid #27ae60;
     width: 50% !important;
     padding-bottom: 5px;
